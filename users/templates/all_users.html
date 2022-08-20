@@ -1,0 +1,27 @@
+<div class="main">
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+ <table>
+    <tr style='
+    background-color: #04AA6D;
+    color: white;
+  '>    <th>Id</th>
+        <th>Username</th> 
+        <th>Password</th><br>
+         </tr>
+    {% for d in data %}
+
+ <tr style=" background-color:bisque">
+    <td>{{d.id}}</td>
+        <td>{{ d.Username }}</td>
+        
+    <td>{{ d.Password }}</td>
+
+</tr>
+ 
+    {% endfor %}
+</table>
+</div>
